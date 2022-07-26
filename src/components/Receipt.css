@@ -11,3 +11,7 @@ p {
 .large {
   font-size: large;
 }
+
+.border {
+  border: 1px solid black;
+}

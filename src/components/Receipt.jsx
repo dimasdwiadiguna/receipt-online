@@ -11,17 +11,20 @@ function useQuery() {
 const Receipt = ({ orderId, nama, berat, diskon, totalBiaya, status }) => {
   return (
     <>
-      <img src={Logo} width="200px" />
-      <p>Negla Kencana Residence</p>
-      <p>----------------------------</p>
-      <p className="large">{orderId}</p>
-      <p>----------------------------</p>
+      <img src={Logo} width="150px" />
+      <p>Negla Kencana Residence Blok C No 3</p>
+      <p>Ujung Berung, Bandung</p>
+      <p>WA : 0821-2775-3082</p>
+      <div className="border">
+        <p className="large">{orderId}</p>
+      </div>
       <p>{nama}</p>
       <p>Berat : {berat} kg</p>
       <p>Diskon : Rp.{diskon}</p>
       <p>Total : Rp.{totalBiaya}</p>
-      <p>----------------------------</p>
-      <p>Terima kasih telah menggunakan jasa goTrik setrika kiloan!</p>
+      <p>-----------------------------</p>
+      <p>Terima kasih. Semoga berkah.</p>
+      <p>goTrik Setrika Kiloan</p>
     </>
   );
 };
