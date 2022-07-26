@@ -15,13 +15,19 @@ const Receipt = ({ orderId, nama, berat, diskon, totalBiaya, status }) => {
       <p>Negla Kencana Residence Blok C No 3</p>
       <p>Ujung Berung, Bandung</p>
       <p>WA : 0821-2775-3082</p>
+      <p>-----------------------------</p>
+      <p> </p>
       <div className="border">
         <p className="large">{orderId}</p>
       </div>
-      <p>{nama}</p>
-      <p>Berat : {berat} kg</p>
-      <p>Diskon : Rp.{diskon}</p>
-      <p>Total : Rp.{totalBiaya}</p>
+      <p> </p>
+      <p>-----------------------------</p>
+      <div className="center">
+        <p>{nama}</p>
+        <p>Berat : {berat} kg</p>
+        <p>Diskon : Rp.{diskon}</p>
+        <p>Total : Rp.{totalBiaya}</p>
+      </div>
       <p>-----------------------------</p>
       <p>Terima kasih. Semoga berkah.</p>
       <p>goTrik Setrika Kiloan</p>
