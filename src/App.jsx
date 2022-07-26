@@ -17,7 +17,9 @@ function App() {
       berat={query.get("berat")}
       diskon={query.get("diskon")}
       totalBiaya={query.get("totalBiaya")}
-      statusBayar={query.get("statusBayar")}
+      tglMasuk={query.get("tglMasuk")}
+      tglKeluar={query.get("tglKeluar")}
+      layanan={query.get("layanan")}
     />
   );
 }
