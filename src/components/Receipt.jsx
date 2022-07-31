@@ -17,6 +17,7 @@ const Receipt = ({
   berat,
   diskon,
   totalBiaya,
+  ongkir,
 }) => {
   return (
     <>
@@ -26,23 +27,25 @@ const Receipt = ({
       <p>-----------------------------</p>
       <p> </p>
       <div className="border">
-        <p className="large">{orderId}</p>
+        <p className="large">
+          {orderId} - {layanan}
+        </p>
       </div>
       <p> </p>
       <p>-----------------------------</p>
       <div className="center">
         <p>{nama}</p>
-        <p>
-          Masuk : {tglMasuk} - {layanan}
-        </p>
-        <p>Perkiraan selesai : {tglKeluar}</p>
+        <p>Masuk : {tglMasuk}</p>
+        <p>Selesai : {tglKeluar}</p>
         <p>Berat : {berat} kg</p>
-        <p>(Diskon : Rp.{diskon})</p>
-        <p>Total : Rp.{totalBiaya}</p>
+        <p>-----------------------------</p>
+        <p>(Ongkos kirim : +Rp.{ongkir})</p>
+        <p>(Diskon : -Rp.{diskon})</p>
+        <p>TOTAL : Rp.{totalBiaya}</p>
       </div>
-      <p>--**--</p>
+      <p> . </p>
       <p>Terima kasih. Semoga berkah.</p>
-      <p>-----------------------------</p>
+      <p>--**--</p>
       <p>Negla Kencana Residence Blok C No 3</p>
       <p>Ujung Berung, Bandung</p>
     </>

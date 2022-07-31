@@ -20,6 +20,7 @@ function App() {
       tglMasuk={query.get("tglMasuk")}
       tglKeluar={query.get("tglKeluar")}
       layanan={query.get("layanan")}
+      ongkir={query.get("ongkir")}
     />
   );
 }
